@@ -2,6 +2,7 @@ import  './App.css'
 import  { Header} from './Header';
 import Footer from './Footer';
 import BookCard from './BookCard';
+import Panel from './Panel';
 function App() {
 
   return (
@@ -9,11 +10,7 @@ function App() {
       <div className="app">
         
         <Header />
-
-        <section className="panel">
-
-          <h2 className="panel-title">Currently reading</h2>
-          <div className="panel-body">
+        <Panel title="Crrently Reading">
             <BookCard 
               title={"To Kill a Mockingbird"} 
               author={"Harper Lee"}
@@ -26,14 +23,8 @@ function App() {
               pages={"like 200"}
               rating = {2}
             />
-          </div>
-
-        </section>
-
-        <section className="panel">
-
-          <h2 className="panel-title">Want to read</h2>
-          <div className="panel-body">
+        </Panel>
+        <Panel title="Want to read">
             <BookCard 
               title={"Harry Potter and the Sorcerer's Stone"} 
               author={"J.K. Rowling"}
@@ -42,9 +33,8 @@ function App() {
               title={"Pride and Prejudice"} 
               author={"Jane Austen"}
             />
-          </div>
-          
-        </section>
+        </Panel>
+
       </div>
       <Footer />
     </>
