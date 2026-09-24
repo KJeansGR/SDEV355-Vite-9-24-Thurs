@@ -10,7 +10,8 @@ export default function BookCard({title, author, pages, rating}){
             } 
             {rating &&
                 <p className="card-author">Rating: {"★".repeat(rating)}</p>
-            } 
+            }
+            <span>This is a span</span> 
             
 
         </article>
